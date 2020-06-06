@@ -222,7 +222,6 @@ CoinJoinの目的の一つは、この近似を破壊することにある。そ
 
 ==== [[Fee bumping|手数料増額]] ====
 
-This could be mitigated by some of the time reducing the amount of both outputs, or reducing only the payment amount (in a sender-pays-for-fee model).
 
 [[BIP 0125]]は未承認トランザクションの手数料を更新して増額する手法を定義している。[[Miner_fees#The_market_for_block_space|ブロックスペース市場]]の文脈では、ユーザーは[[Fee bumping|fee bump]]や手数料の増額を行う。一般的に新しく増額されたマイナー手数料はお釣りの量から差し引かれることになる。もしも攻撃者がすべての未承認トランザクションを観測しているのであれば、攻撃者からは低い手数料のトランザクションと高い手数料のトランザクションが見えることになり、量が手数料の分だけ低下した方がお釣りのアウトプットになる。
 
@@ -1197,7 +1196,6 @@ Reddit のコメント: https://www.reddit.com/r/Bitcoin/comments/amut05/investi
 
 === プライバシーの悪い例 - トランザクション送信データであるIPアドレスとブロックチェーンデータのデータ融合 ===
 
-Lesson: Private transaction broadcasting (for example over [[tor]]) is necessary for privacy.
 
 # 2018年の論文<ref>Juhász PL, Stéger J, Kondor D, Vattay G (2018) A Bayesian approach to identify Bitcoin users. PLOS ONE 13(12): e0207000. https://doi.org/10.1371/journal.pone.0207000</ref> ではブロックチェーン解析とトランザクション送信の追跡を行ってビットコインユーザーの匿名化を行った。
 # 研究者はアドレスの再利用と共通インプット所有推定を利用した(CoinJoinの可能性については言及がなかった)。
